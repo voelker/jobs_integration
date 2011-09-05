@@ -5,6 +5,7 @@ Feature: Viewing articles
 
   Scenario: Viewing a syndicated article
     Given a viewable article has been syndicated
+    And the heading of the article is "Unmasking the impostor"
     When I go to view the new article
 
     Then I should see an article
